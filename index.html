@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.documentElement.classList.add("js")</script>
+  <title>North Shear — барбершоп в Омске</title>
+  <meta name="description" content="Мужские стрижки и бритьё в центре Омска. Час на клиента, горячее полотенце и мастер, который слушает.">
+  <meta property="og:title" content="North Shear — барбершоп в Омске">
+  <meta property="og:description" content="Мужские стрижки и бритьё в центре Омска. Ежедневно 10:00–21:00.">
+  <meta property="og:image" content="images/interior.jpg">
+  <meta name="theme-color" content="#16120f">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%2316120f'/><text x='32' y='46' text-anchor='middle' font-family='Arial Narrow,Arial' font-weight='900' font-size='38' fill='%23c9a063'>NS</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@600;800;900&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ Первый экран ============ -->
+  <header class="hero" id="home">
+    <div class="hero__bg" aria-hidden="true">
+      <img src="images/interior.jpg" alt="" width="2000" height="1328" fetchpriority="high">
+    </div>
+
+    <nav class="nav" aria-label="Главное меню">
+      <a href="#home" class="nav__logo">North Shear</a>
+      <div class="nav__menu" id="menu">
+        <a href="#price">Прайс</a>
+        <a href="#ritual">Визит</a>
+        <a href="#team">Мастера</a>
+        <a href="#works">Работы</a>
+        <a href="#booking">Контакты</a>
+      </div>
+      <a href="#booking" class="btn btn--brass nav__cta">Записаться</a>
+      <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    </nav>
+
+    <div class="hero__info">
+      <p class="hero__lead">Мужские стрижки и бритьё в центре Омска. Час на клиента, горячее полотенце и мастер, который слушает.</p>
+      <dl class="hero__facts">
+        <div><dt>Адрес</dt><dd>ул. Ленина, 10</dd></div>
+        <div><dt>Часы</dt><dd>Ежедневно 10–21</dd></div>
+      </dl>
+      <a href="#booking" class="btn btn--brass btn--big">Записаться на стрижку</a>
+    </div>
+
+    <h1 class="cut" aria-label="North Shear — барбершоп в Омске">
+      <span class="cut__half cut__half--top" aria-hidden="true">North Shear</span>
+      <span class="cut__half cut__half--bot" aria-hidden="true">North Shear</span>
+      <span class="cut__blade" aria-hidden="true"></span>
+    </h1>
+  </header>
+
+  <main>
+    <!-- ============ Лента фото ============ -->
+    <div class="reel" aria-hidden="true">
+      <div class="reel__track">
+        <div class="reel__group">
+          <img src="images/fade-side.jpg" alt="" loading="lazy">
+          <img src="images/beard-close.jpg" alt="" loading="lazy">
+          <img src="images/tools.jpg" alt="" loading="lazy">
+          <img src="images/razor-tattoo.jpg" alt="" loading="lazy">
+          <img src="images/recline.jpg" alt="" loading="lazy">
+          <img src="images/comb.jpg" alt="" loading="lazy">
+          <img src="images/gallery-2.jpg" alt="" loading="lazy">
+          <img src="images/clipper-back.jpg" alt="" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ О нас ============ -->
+    <section class="intro" id="about" aria-labelledby="introTitle">
+      <div class="intro__text">
+        <h2 class="intro__title" id="introTitle">Стрижём без спешки</h2>
+        <p class="intro__body">North Shear — небольшой барбершоп на три кресла. Мы не ставим клиентов потоком: на каждого час, чтобы обсудить форму, спокойно постричь и показать, как укладывать дома.</p>
+        <ul class="intro__stats">
+          <li><strong>3</strong><span>мастера, у каждого стаж от&nbsp;5&nbsp;лет</span></li>
+          <li><strong>60</strong><span>минут на стрижку, без очереди и&nbsp;спешки</span></li>
+          <li><strong>14</strong><span>дней бесплатной окантовки после стрижки</span></li>
+        </ul>
+      </div>
+      <div class="intro__pics">
+        <figure class="intro__pic intro__pic--a" data-speed="-0.08"><img src="images/chair-steel.jpg" alt="Барбер-кресло North Shear" loading="lazy" width="1000" height="1250"></figure>
+        <figure class="intro__pic intro__pic--b" data-speed="0.1"><img src="images/gallery-1.jpg" alt="Зона ожидания с кожаным диваном" loading="lazy" width="1200" height="1200"></figure>
+      </div>
+    </section>
+
+    <!-- ============ Прайс + калькулятор ============ -->
+    <section class="price" id="price" aria-labelledby="priceTitle">
+      <div class="price__head">
+        <h2 class="price__title" id="priceTitle">Прайс</h2>
+        <p class="price__hint">Отметьте услуги, и мы посчитаем стоимость и время визита.</p>
+      </div>
+
+      <ul class="menu-list" id="calcList">
+        <li class="row">
+          <label>
+            <input type="checkbox" data-id="cut" data-conflicts="combo" data-price="1750" data-time="60">
+            <span class="row__check" aria-hidden="true"></span>
+            <img class="row__thumb" src="images/fade-side.jpg" alt="" loading="lazy">
+            <span class="row__name">Стрижка</span>
+            <span class="row__desc">Консультация, мытьё головы, стрижка и укладка. Подбираем форму под тип лица.</span>
+            <span class="row__time">60 мин</span>
+            <span class="row__price">1 750 ₽</span>
+          </label>
+        </li>
+        <li class="row">
+          <label>
+            <input type="checkbox" data-id="combo" data-conflicts="cut beard" data-price="2500" data-time="90">
+            <span class="row__check" aria-hidden="true"></span>
+            <img class="row__thumb" src="images/beard-razor.jpg" alt="" loading="lazy">
+            <span class="row__name">Стрижка и борода</span>
+            <span class="row__desc">Стрижка, оформление бороды, горячее полотенце и укладка. Выгоднее, чем по отдельности.</span>
+            <span class="row__time">90 мин</span>
+            <span class="row__price">2 500 ₽</span>
+          </label>
+        </li>
+        <li class="row">
+          <label>
+            <input type="checkbox" data-id="beard" data-conflicts="combo" data-price="700" data-time="40">
+            <span class="row__check" aria-hidden="true"></span>
+            <img class="row__thumb" src="images/beard-trim.jpg" alt="" loading="lazy">
+            <span class="row__name">Борода</span>
+            <span class="row__desc">Моделирование формы, опасная бритва, уход маслом.</span>
+            <span class="row__time">40 мин</span>
+            <span class="row__price">700 ₽</span>
+          </label>
+        </li>
+        <li class="row">
+          <label>
+            <input type="checkbox" data-id="edge" data-price="0" data-time="15">
+            <span class="row__check" aria-hidden="true"></span>
+            <img class="row__thumb" src="images/edge-clipper.jpg" alt="" loading="lazy">
+            <span class="row__name">Окантовка</span>
+            <span class="row__desc">Бесплатно в течение двух недель после стрижки у нас.</span>
+            <span class="row__time">15 мин</span>
+            <span class="row__price">0 ₽</span>
+          </label>
+        </li>
+      </ul>
+
+      <div class="total" id="total">
+        <div class="total__cell"><span>Итого</span><strong id="calcPrice">0 ₽</strong></div>
+        <div class="total__cell"><span>Время</span><strong id="calcTime">0 мин</strong></div>
+        <a href="#booking" class="btn btn--ink" id="calcBook">Записаться</a>
+      </div>
+
+    </section>
+
+    <!-- ============ Ритуал визита ============ -->
+    <section class="ritual" id="ritual" aria-labelledby="ritualTitle">
+      <div class="ritual__pin">
+        <div class="ritual__track" id="ritualTrack">
+          <div class="ritual__intro">
+            <h2 class="ritual__title" id="ritualTitle">Как проходит визит</h2>
+            <p>Пять шагов, которые мы проходим с каждым клиентом. Прокрутите дальше.</p>
+          </div>
+          <article class="step">
+            <figure><img src="images/profile.jpg" alt="Мужчина с аккуратной бородой и укладкой" loading="lazy"></figure>
+            <span class="step__n">01</span>
+            <h3>Разговор</h3>
+            <p>Смотрим на форму головы и волосы, обсуждаем, как вы обычно укладываетесь и сколько времени готовы на это тратить.</p>
+          </article>
+          <article class="step">
+            <figure><img src="images/cut-scissors.jpg" alt="Мастер стрижёт ножницами по расчёске" loading="lazy"></figure>
+            <span class="step__n">02</span>
+            <h3>Стрижка</h3>
+            <p>Машинка на висках, ножницы сверху. Без спешки и с проверкой симметрии в зеркале.</p>
+          </article>
+          <article class="step">
+            <figure><img src="images/beard-close.jpg" alt="Мастер подравнивает бороду ножницами" loading="lazy"></figure>
+            <span class="step__n">03</span>
+            <h3>Борода</h3>
+            <p>Задаём линию щёк и шеи, убираем лишнее опасной бритвой.</p>
+          </article>
+          <article class="step">
+            <figure><img src="images/foam.jpg" alt="Мастер наносит пену для бритья помазком" loading="lazy"></figure>
+            <span class="step__n">04</span>
+            <h3>Горячее полотенце</h3>
+            <p>Распаривает кожу перед бритьём и снимает раздражение после. Пять минут, чтобы выдохнуть.</p>
+          </article>
+          <article class="step">
+            <figure><img src="images/style-dry.jpg" alt="Мастер сушит и укладывает волосы клиента" loading="lazy"></figure>
+            <span class="step__n">05</span>
+            <h3>Укладка</h3>
+            <p>Сушим, укладываем и показываем, каким средством и как повторить это дома.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Мастера ============ -->
+    <section class="team" id="team" aria-labelledby="teamTitle">
+      <h2 class="team__title" id="teamTitle">Мастера</h2>
+      <div class="team__grid">
+        <article class="barber">
+          <figure><img src="images/hero.jpg" alt="Арсений, барбер" loading="lazy"></figure>
+          <h3>Арсений</h3>
+          <p>Классические стрижки и работа ножницами. Стаж 9 лет.</p>
+        </article>
+        <article class="barber">
+          <figure><img src="images/master-1.jpg" alt="Тимур, барбер, за работой" loading="lazy"></figure>
+          <h3>Тимур</h3>
+          <p>Фейды, текстура и кудрявые волосы. Стаж 6 лет.</p>
+        </article>
+        <article class="barber">
+          <figure><img src="images/master-2.jpg" alt="Глеб, барбер, за работой" loading="lazy"></figure>
+          <h3>Глеб</h3>
+          <p>Бороды, бритьё опасной бритвой. Стаж 5 лет.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ Работы ============ -->
+    <section class="works" id="works" aria-labelledby="worksTitle">
+      <div class="works__head">
+        <h2 class="works__title" id="worksTitle">Работы</h2>
+        <p>Нажмите на фото, чтобы открыть его крупно.</p>
+      </div>
+      <div class="mosaic" id="mosaic">
+        <button class="tile tile--a" type="button"><img src="images/razor-tattoo.jpg" alt="Окантовка опасной бритвой" loading="lazy"></button>
+        <button class="tile tile--b" type="button"><img src="images/fade-side.jpg" alt="Фейд с чёткой линией" loading="lazy"></button>
+        <button class="tile tile--c" type="button"><img src="images/comb.jpg" alt="Стрижка ножницами по расчёске" loading="lazy"></button>
+        <button class="tile tile--d" type="button"><img src="images/tools.jpg" alt="Машинки, ножницы и средства для укладки" loading="lazy"></button>
+        <button class="tile tile--e" type="button"><img src="images/beard-trim.jpg" alt="Оформление бороды" loading="lazy"></button>
+        <button class="tile tile--f" type="button"><img src="images/gallery-3.jpg" alt="Детская стрижка машинкой" loading="lazy"></button>
+        <button class="tile tile--g" type="button"><img src="images/recline.jpg" alt="Бритьё бороды в кресле" loading="lazy"></button>
+        <button class="tile tile--h" type="button"><img src="images/edge-clipper.jpg" alt="Короткая стрижка машинкой" loading="lazy"></button>
+        <button class="tile tile--i" type="button"><img src="images/salon-long.jpg" alt="Ряд барбер-кресел под лампами" loading="lazy"></button>
+      </div>
+    </section>
+
+    <!-- ============ Отзывы ============ -->
+    <section class="voices" aria-labelledby="voicesTitle">
+      <img class="voices__bg" src="images/clipper-back.jpg" alt="" loading="lazy">
+      <div class="voices__inner">
+        <h2 class="visually-hidden" id="voicesTitle">Отзывы</h2>
+        <div class="voices__slides" id="slides" aria-live="polite">
+          <blockquote class="quote is-active">
+            <p>Наконец-то нашёл мастера, который слушает. Стрижка держит форму уже месяц.</p>
+            <footer>Артём, 27 лет</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>Уютно, чисто, без очередей. Борода после горячего полотенца — отдельное удовольствие.</p>
+            <footer>Михаил, 34 года</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>Записался онлайн за минуту, пришёл вовремя и ушёл довольным. Приду ещё.</p>
+            <footer>Илья, 22 года</footer>
+          </blockquote>
+        </div>
+        <div class="voices__nav">
+          <button type="button" class="circle" id="prev" aria-label="Предыдущий отзыв">&#8592;</button>
+          <span class="voices__count" id="count">1 / 3</span>
+          <button type="button" class="circle" id="next" aria-label="Следующий отзыв">&#8594;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Запись ============ -->
+    <section class="booking" id="booking" aria-labelledby="bookingTitle">
+      <figure class="booking__photo">
+        <img src="images/chair-red.jpg" alt="Красное барбер-кресло в тёплом свете" loading="lazy">
+        <figcaption>
+          <dl class="contacts">
+            <div><dt>Адрес</dt><dd>Омск, ул. Ленина, 10</dd></div>
+            <div><dt>Часы</dt><dd>Ежедневно, 10:00–21:00</dd></div>
+            <div><dt>Телефон</dt><dd><a href="tel:+73812000000">+7 (3812) 00-00-00</a></dd></div>
+            <div><dt>Telegram</dt><dd><a href="https://t.me/assalameu" target="_blank" rel="noopener">@assalameu</a></dd></div>
+          </dl>
+        </figcaption>
+      </figure>
+
+      <div class="booking__form">
+        <h2 class="booking__title" id="bookingTitle">Запись</h2>
+        <p class="booking__hint">Оставьте имя и телефон. Мастер перезвонит в течение 15 минут и подтвердит время.</p>
+
+        <form class="form" id="bookingForm" novalidate>
+          <fieldset class="chips" id="formServices">
+            <legend>Услуги</legend>
+            <label><input type="checkbox" name="service" value="cut" checked><span>Стрижка</span></label>
+            <label><input type="checkbox" name="service" value="combo"><span>Стрижка и борода</span></label>
+            <label><input type="checkbox" name="service" value="beard"><span>Борода</span></label>
+            <label><input type="checkbox" name="service" value="edge"><span>Окантовка</span></label>
+          </fieldset>
+          <fieldset class="chips">
+            <legend>Когда удобно</legend>
+            <label><input type="radio" name="day" value="Сегодня" checked><span>Сегодня</span></label>
+            <label><input type="radio" name="day" value="Завтра"><span>Завтра</span></label>
+            <label><input type="radio" name="day" value="На неделе"><span>На неделе</span></label>
+          </fieldset>
+          <label class="field"><span>Имя</span><input type="text" name="name" placeholder="Как к вам обращаться" autocomplete="name"></label>
+          <label class="field"><span>Телефон</span><input type="tel" name="phone" placeholder="+7 900 000-00-00" autocomplete="tel"></label>
+          <button class="btn btn--brass btn--big" type="submit">Отправить заявку</button>
+          <p class="form__note" id="formNote" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__word" aria-hidden="true">North Shear</div>
+    <div class="footer__row">
+      <span>© 2026 North Shear. Демо-проект</span>
+      <span>Фото: Unsplash</span>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Фото крупно">
+    <img alt="" id="lightboxImg">
+    <button type="button" class="circle lightbox__close" id="lbClose" aria-label="Закрыть">&#10005;</button>
+    <button type="button" class="circle lightbox__prev" id="lbPrev" aria-label="Предыдущее фото">&#8592;</button>
+    <button type="button" class="circle lightbox__next" id="lbNext" aria-label="Следующее фото">&#8594;</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
